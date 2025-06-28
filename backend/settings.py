@@ -55,6 +55,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",  # for local dev
+    "https://your-frontend.netlify.app",  # your deployed frontend
+]
+
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
